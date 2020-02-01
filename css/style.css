@@ -3,55 +3,357 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 [hidden] {
-  display: none;
+    display: none;
 }
-.header{
-  height: 380px;
-  background-size:cover;
-  text-align:center;
-  background-image: url(../img/Hero.png);
+
+.header {
+    padding-top: 92px;
+    height: 300px;
+    background: #424242;
+}
+
+.title {
+    width: 837px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.logo {
+    width: 117px;
+    height: 117px;
+    background-image: url(../img/BMICLogo.png);
+    float: left;
+    position: relative;
+    margin-right: 97px;
+}
+
+.input {
+    margin-top: -51px;
+    margin-right: 53px;
+    width: 250px;
+    float: left;
+    position: relative;
+}
+
+.input label {
+    font-family: AppleSystemUIFont;
+    font-size: 18px;
+    color: #FFD366;
+    float: left;
+    position: relative;
+    margin-top: 23px;
+    margin-bottom: 7px;
+}
+
+.input input {
+    width: 250px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    font-family: SFNSDisplay;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.btn {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #FFD366;
+    outline: 0;
+    float: left;
+    position: relative;
+    text-align: center;
+    font-family: PingFangTC-Regular;
+    font-size: 24px;
+    color: #424242;
+}
+
+.BMIBtn {
+    padding-top: 30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px solid #86D73F;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    text-align: center;
+    color: #86D73F;
+    position: relative;
+}
+
+.loopBtn {
+    top: 77px;
+    left: 83px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #86D73F;
+    background-image: url(../img/icons_loop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid #424242;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.bmi {
+    font-family: AppleSystemUIFont;
+    font-size: 14px;
+}
+
+.bmiValue {
+    font-family: SFNSDisplay;
+    font-size: 32px;
+}
+
+.remark {
+    font-family: SFNSDisplay;
+    font-size: 32px;
+    color: #86D73F;
+    margin-top: 41px;
+    margin-left: 18px;
+    float: left;
+    position: relative;
+}
+
+.clear {
+    clear: both;
+}
+
+.contain {
+    padding-bottom: 190px;
+}
+
+.contain h1 {
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 68px;
+    font-family: SFNSDisplay;
+    font-size: 24px;
+    color: #424242;
+}
+
+.data {
+    margin: 16px auto;
+    height: 62px;
+    width: 624px;
+}
+
+.tag {
+    width: 7px;
+    height: 62px;
+    background: #86D73F;
+    box-shadow: 2px 0 3px 0 rgba(134, 215, 63, 0.29);
+    float: left;
+    position: relative;
+}
+
+.remind {
+    width: 80px;
+    margin-left: 21px;
+    margin-top: 21px;
+    font-family: SFNSDisplay;
+    font-size: 20px;
+    color: #4A4A4A;
+    text-align: center;
+    float: left;
+    position: relative;
+}
+
+.material {
+    margin-top: 21px;
+    margin-left: 42px;
+    width: 80px;
+    height: 20px;
+    float: left;
+    position: relative;
+}
+
+.tit {
+    font-family: AppleSystemUIFont;
+    font-size: 12px;
+    color: #424242;
+    float: left;
+    position: relative;
+}
+
+.valu {
+    font-family: SFNSDisplay;
+    font-size: 20px;
+    color: #4A4A4A;
+    float: left;
+    position: relative;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.id_wrapper {
+    /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
+    min-height: 100%;
+    /* 位置設為relative, 作為footer區塊位置的參考 */
+    position: relative;
+}
+
+.floor {
+    /* 設定footer的高度 */
+    width: 100%;
+    height: 90px;
+    background: #FFD366;
+    box-sizing: border-box;
+    /* 設定footer絕對位置在底部 */
+    position: absolute;
+    /* 展開footer寬度 */
+    bottom: 0px;
+    text-align: center;
+}
+
+.floor img {
+    height: 55px;
+    width: 55px;
+    margin-top: 18px;
+    filter: invert(99%) sepia(0%) saturate(2%) hue-rotate(31deg) brightness(104%) contrast(101%);
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,63 @@
     <title>BMI Calulator</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<div class="header">
-    
-</div>
-<div class="contain">
 
-</div>
+<body>
+    <div class="id_wrapper">
+        <div class=" header ">
+            <div class="title ">
+                <div class="logo "></div>
+                <div class="input ">
+                    <label for="heightInput " class="heightLabel ">身高 cm</label>
+                    <input type="text " id="heightInput " class="heightInput " placeholder="請輸入身高 ">
+                    <label for="weightInput " class="weightLabel ">體重 kg</label>
+                    <input type="text " id="weightInput " class="weightInput " placeholder="請輸入體重 ">
+                </div>
+                <div class="result ">
+                    <input type="button " id="btn " class="btn " value="看結果 ">
+                    <!--                   
+                    <div class="BMIBtn ">
+                        <p class="bmiValue ">20.90</p>
+                        <p class="bmi ">BMI</p>
+                        <input type="button " id="loopBtn " class="loopBtn ">
+                    </div>
+                    <div class="remark ">理想</div>
+                      -->
+                </div>
+            </div>
+            <div class="clear "></div>
+        </div>
+        <div class="contain ">
+            <h1>BMI 紀錄</h1>
+            <div class="BMIlist ">
+                <div class="data ">
+                    <div class="tag "></div>
+                    <p class="remind ">理想</p>
+                    <div class="material ">
+                        <p class="tit ">BMI</p>
+                        <p class="vlu ">20.90</p>
+                    </div>
+                    <div class="material ">
+                        <p class="tit ">weight</p>
+                        <p class="vlu ">70kg</p>
+                    </div>
+                    <div class="material ">
+                        <p class="tit ">height</p>
+                        <p class="vlu ">70kg</p>
+                    </div>
+                    <div class="material ">
+
+                        <p class="tit ">06-19-2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="floor ">
+            <img src="./img/BMICLogo.png">
+        </div>
+    </div>
+
 </body>
+<script src="js\all.js "></script>
+
 </html>
